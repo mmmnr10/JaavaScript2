@@ -6,8 +6,10 @@
 
   // This function is similar to the last task of the iteration challenges, except
   // it returns a string from the function instead of using console.log().
+
+
   const doggieWalks = dogs.forEach((dogName) => {
-    return "The " + dogName + " needs to go for a walk!"
+    return " The " + dogName + " needs to go for a walk!"
   })
 
   // Task 1: Use console.log to log the `doggieWalks` variable below to see what was
@@ -20,11 +22,16 @@ console.log (doggieWalks);
   const doggieWalksMap = dogs.map((dogName) => {
     return "The " + dogName + " needs to go for a walk!";
   });
-
+console.log(doggieWalksMap);
   // Task 3: Create a new variable called `shoutyDogNames` and assign it to a new
   // dogs.map() call. Inside the dogs.map() call, write a function which returns a
   // dog's name in uppercase. Finally, log the `shoutyDogNames` variable.
-  console.log (shoutyDogNames);
+  const shoutyDogNames = dogs.map((dogName) => {
+    return dogName.toUpperCase()
+  });
+  console.log(shoutyDogNames);
+
+ 
 </script>
 
 <p>Open the console in the browser to see the output of this script.</p>

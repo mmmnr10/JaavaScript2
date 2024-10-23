@@ -18,27 +18,25 @@
     studentAt: "Chas", 
     name: "Mustaf", 
     age: 26,
-    favoriteFoods: ["Pizza", "Pasta", "Kottbullar"]
   };
 
   console.log(person)
 
   // Task 2: Add a fourth property to the object using the key `favoriteFoods`. Its value
   // should be an array of strings with some foods you like.
-consol.log (person.name);
-consol.log (person.age);
+  person.favouriteFood = ["Pizza", "Pasta", "Kottbullar"]
 
   // Task 3: Use the dot notation to print the name and age properties from the person
   // object using console.log.
-consol.log (person.name)
-consol.log (person.age)
+console.log (person.name)
+console.log (person.age)
 
   // Task 4: You can add a property to an object using the dot notation and using assignment to
   // set a its value. Do this to add a new property to the person object with the key `eyeColor`
   // and value being a string with the color of your eyes.
 
 person.eyeColor="brun";
-consol.log (person.eyeColor);
+console.log (person.eyeColor);
   // Task 5: Objects can be nested within other objects. To fetch a value, you must chain
   // the dot notation. For example, you could select the entire `adult` object from the
   // `dog` object below using the notation `dog.labrador.adult`. Using the dog object below,
@@ -53,7 +51,7 @@ consol.log (person.eyeColor);
       }
     }
   }
-console.log (dogs.labrador.puppy);
+console.log (dogs.labrador.puppy.name);
 </script>
 
 <p>Open the console in the browser to see the output of this script.</p>
